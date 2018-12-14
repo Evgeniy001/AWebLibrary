@@ -1,0 +1,11 @@
+.header{
+    with: 30rem;
+    text-align: center;
+}
+.footer{
+    with: 30rem;
+    text-align: center;
+}
+.content-container{
+    margin: 1rem auto 2rem;
+}

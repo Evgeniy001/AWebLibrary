@@ -1,18 +1,23 @@
+<div class="card login-center">
   <div class="card-body">
     <h5 class="card-title">Войдите</h5>
     <div class="auth-context">
-        <form>
+        <form [formGroup]="loginForm">
             <div class="form-group">
               <label for="id-login">Логин:</label>
-              <input type="text" class="form-control" name="login" id="id-login" aria-describedby="emailHelp" placeholder="Enter email">
+              <input type="text" class="form-control" formControlName="login" id="id-login">
+              
             </div>
             <div class="form-group">
               <label for="id-password">Пароль:</label>
-              <input type="password" class="form-control" name="password" id="id-password" placeholder="Password">
+              <input type="password" class="form-control" formControlName="password" id="id-password">
             </div>
             
             <button type="submit" class="btn btn-primary">Войти</button>
           </form>
+          <div>{{loginForm.value | json}}</div>
     </div>
   </div>
+  </div>
+
  
